@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailActivity">
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER PHONE NUMBER"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:hint="ENTER EMAIL"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/orderDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/email"
+        android:textSize="25sp"
+        android:padding="16dp"
+        android:layout_margin="20dp"/>
+
+
+    <Button
+        android:id="@+id/sendSmsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:layout_below="@id/orderDetailsTextView"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/sendEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:layout_below="@id/sendSmsButton"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

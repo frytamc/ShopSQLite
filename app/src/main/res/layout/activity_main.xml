@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bg">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    
+    
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/client_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner"
+                android:hint="CLIENTS NAME"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/extras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DODATKI"
+                android:layout_below="@id/client_name"
+                android:layout_margin="10dp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_army"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARMIA"
+                android:layout_below="@id/extras"
+                android:layout_margin="5dp"/>
+
+            <Spinner
+                android:id="@+id/army_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:layout_below="@id/checkbox_army"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_minerals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUROWCE"
+                android:layout_below="@id/army_spinner"
+                android:layout_margin="5dp"/>
+
+            <Spinner
+                android:id="@+id/minerals_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:layout_below="@id/checkbox_minerals"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_teams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DRUŻYNY"
+                android:layout_below="@id/minerals_spinner"
+                android:layout_margin="5dp"/>
+
+            <Spinner
+                android:id="@+id/teams_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:layout_below="@id/checkbox_teams"/>
+
+            <Button
+                android:id="@+id/add_order_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teams_spinner"
+                android:layout_centerHorizontal="true"
+                android:text="ADD"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CENA"
+                android:layout_below="@id/add_order_btn"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/priceTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_below="@id/price"
+                android:layout_margin="10dp"
+                android:textSize="30dp"/>
+
+
+
+
+        </RelativeLayout>
+        
+        
+    </ScrollView>
+
+
+
+</RelativeLayout>
